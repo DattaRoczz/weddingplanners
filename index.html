@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Document</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
+   <style>
+    body{
+        background-image: url(./pexels-suzukii-xingfu-872831.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        width: 1200px;
+    }
+    #circle{
+        width: 60px;
+        height: 60px;
+        border-radius: 100%;
+        background-color: transparent;
+        border: 3px solid white;
+        float: left;
+        position: fixed;
+        right: 170px;
+        top: 10px;
+        font-size: 20px;
+    }
+    #logo{
+        color: white;
+
+        position: absolute;
+        left: 10px;
+        bottom: -15px;
+    }
+    #name{
+        color: white;
+        float: left;
+        position: fixed;
+        right: 10px;
+        top: 10px;
+    }
+    #heading{
+        color: white;
+        position:fixed;
+        top: 200px;
+        left: 0px;
+        font-size: 60px;
+        padding-left: 80px;
+
+    }
+    #navbar{
+        display: flex;
+        color: white;
+        list-style: none;
+        padding-left: 150px;
+        font-size: 23px;
+    }
+    .list:hover{
+        color: orange;
+        cursor: pointer;
+    }
+    .list{
+        margin: 30px;
+    }
+    #sub{
+        color: white;
+        position: relative;
+        top: 420px;
+        left: 70px;
+        line-height: 35px;
+    }
+    #login{
+        width: 350px;
+        height: 500px;
+        background-color: transparent;
+        position: fixed;
+        right: 40px;
+        bottom: 60px;
+    }
+    #lgn{
+        padding-left: 50px;
+        color: white;
+    }
+    input{
+        width: 280px;
+        height: 30px;
+       border: 3px solid lightgrey;
+        margin: 12px 30px;
+        border-radius: 5px;
+    }
+    #submit{
+        width: 120px;
+        height: 30px;
+       border: 3px solid lightgrey;
+        margin: 12px 110px;
+    }
+    #submit:hover{
+        background-color: rgb(215, 213, 213);
+    }
+    #sup{
+        color: white;
+        padding-left: 60px;
+        line-height: 30px;
+        cursor: pointer;
+    }
+    i{
+    color: white;
+    font-size: 20px;
+    padding-left: 30px;
+    }
+    #btn{
+        position: absolute;
+        right: 35px;
+        top: 140px;
+        font-size: 23px;
+        cursor: pointer;
+    }
+    
+   </style>
+</head>
+<body>
+    <ul id="navbar">
+        <li class="list" id="planningTools">Planning Tools</li>
+        <li class="list">Wedding Venues</li>
+     <li class="list">Wedding Vendors</li>
+        <li class="list">Brides</li>
+        <li class="list">Grooms</li>
+        <li class="list">Blogs</li>
+    </ul>
+    <div id="circle"><h2 id="logo">DS</h2></div>
+    <h1 id="name">Wedding.in</h1>
+    <h1 id="heading">Wedding Planners & <br><span style="color: orange;">Management</span></h1>
+    <h2 id="sub">Marriage is the dream for everyone.<br>Let's celebrate &<br>make it memorable..!! </h2>
+    <div id="login">
+        <h2 id="lgn">Login to your account</h2>
+        <input type="text" placeholder="Enter mail or mobile">
+        <input type="password" placeholder="Password" id="pass"><span id="btn" onclick="pass()">🔒</span>
+        <input type="button" value="Login" id="submit">
+        <h3 id="sup">Don't have an account? <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Signup for free</h3>
+        
+    </div>
+    <script>
+        var emoji=0;
+         function pass()
+        {
+            emoji++;
+            if(emoji%2!=0)
+            {
+                document.getElementById("btn").innerHTML="🔓";
+                document.getElementById("pass").type="text"
+
+            }
+            else
+            {
+                document.getElementById("btn").innerHTML="🔒";
+                document.getElementById("pass").type="password"
+            }
+        }
+    </script>
+    <!-- <div id="icons">
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        </div> -->
+</body>
+</html>
